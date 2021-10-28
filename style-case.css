@@ -1,0 +1,295 @@
+.case-info {
+    display: flex;
+    flex-direction: column;
+}
+.case-info h2 {
+    width: 90%;
+    padding-top: 3rem;
+    background-color: gold;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    color: black;
+}
+.subtitle {
+    font-style: italic;
+}
+.view-complete {
+    float: right;
+    top: 100px;
+    position: sticky;
+    font-size: 1rem;
+    box-shadow: 0.5rem 0.5rem black;
+}
+.view-complete2 {
+    display: none;
+    top: 60px;
+    position: sticky;
+    font-size: 1rem;
+    background-color: gold;
+    color: black;
+    box-shadow: 0.5rem 0.5rem black;
+}
+section {
+    display: grid;
+    justify-items: center;
+    padding-bottom: 30px;
+}
+#aboutCase {
+    max-width: 1000px;
+    background-color: whitesmoke;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: rgb(44, 44, 44);
+    font-size: 18px;
+}
+.case-profile-img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    height: auto;
+    vertical-align: middle;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 16px 0 rgba(0, 0, 0, 0.19);
+}
+.case-info img{
+    width: minmax(200px, 400px);
+    height: auto;
+}
+.case-info p {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+/*style for library*/
+#user-profiles {
+    font-family: Tahoma, sans-serif;
+    font-size: .9rem;
+    border-collapse: collapse;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#user-profiles th, td  {
+    border: 1px solid whitesmoke;
+    padding: 8px;
+}
+#user-profiles tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+.-table{
+    overflow-x: auto;
+    width: 100%; 
+}
+.column-header {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    color: black;
+}
+.row-header {
+    width: 12%;
+    height: auto;
+    text-align: left;
+    background-color: rgba(245, 222, 179, 0.493);
+}
+footer {
+    height: 100px;
+    text-align: center;
+}
+.case-profile-img {
+    width: 50px;
+    height: auto;
+}
+#top-findings {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: rgba(211, 211, 211, 0.25);
+}
+#top-findings h3 {
+    font-style: italic;
+    padding-top: 1rem;
+}
+#top-findings div {
+    border-bottom: solid;
+    border-color: white;
+    padding-bottom: 1rem;
+}
+.findings-wrap {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.finding-img {
+    object-fit: contain;
+}
+
+/*style for volunteer app*/
+
+.heuristics-findings {
+    display: block;
+}
+.heuristics-findings div {
+    background-color: whitesmoke;
+    padding: .5rem;
+}
+.heuristics-findings h4 {
+    text-align: center;
+}
+.bullet1 {
+    grid-area: bullet1;
+}
+.bullet2 {
+    grid-area: bullet2;
+}
+.bullet3 {
+    grid-area: bullet3;
+}
+.bullet4 {
+    grid-area: bullet4;
+}
+.bullet5 {
+    grid-area: bullet5;
+}
+.proto-imgs {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+    gap: 1rem;
+    padding: 10px;
+}
+.proto-imgs img {
+    height: 20rem;
+    width: auto;
+}
+
+/*style for amazon*/
+.persona-img {
+    width: 75%;
+    padding: 5px;
+}
+#task-table {
+    font-family: Tahoma, sans-serif;
+    font-size: .9rem;
+    border-collapse: collapse;
+    padding-left: 10px;
+    padding-right: 10px;
+    table-layout: fixed;
+}
+#task-table th, td  {
+    border: 1px solid whitesmoke;
+    padding: 8px;
+}
+#task-table tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+.row-header-task {
+    text-align: left;
+    background-color: rgba(245, 222, 179, 0.493);
+}
+.scenarios-container {
+    display: flex;
+    flex-flow: column wrap;
+    width: 90%;
+    align-items: center;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .body {background: red;}
+    #aboutCase {
+        width: 100%;
+        padding: 0;
+    }
+    .view-complete {
+        display: none;
+    }
+    .view-complete2 {
+        display: block;
+    }
+
+}
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .body {background: rgb(107, 0, 128);}
+    .item-img {
+        width: minmax(350px, 400px);
+    }  
+}
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .body {background: blue;}
+    .projects {
+        padding-top: 100px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #aboutMeInfo {
+        width: 80%;
+    }
+    .heuristics-findings {
+        display: grid;
+        grid-template-areas:
+            "bullet1 bullet2"
+            "bullet3 bullet5"
+            "bullet4 bullet4";
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .body {background: orange;}
+    #aboutMeInfo {
+        width: 65%;
+    }
+    .padded {
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+    .padded-15 {
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+    .findings-wrap p{
+        width: 60%;
+    }
+    .heuristics-findings {
+        display: grid;
+        grid-template-areas:
+            "bullet1 bullet2 bullet3"
+            "bullet4 bullet4 bullet5";
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+    .scenarios-container {
+        display: flex;
+        flex-flow: column wrap;
+        width: 65%;
+    }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .body {background: pink;}
+    .projects {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2em;
+    }
+    .padded {
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+    .padded-15 {
+        padding-right: 15%;
+        padding-left: 15%;
+    }
+}
+
+

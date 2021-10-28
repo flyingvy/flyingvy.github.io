@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Main style -->
+        <link href="style.css" rel="stylesheet">
+        <link href="style-case.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script> 
+        $(document).ready(function(){
+            $(".happy").click(function(){
+                $(".show-hide").slideToggle("normal");
+            });
+        });
+        </script>
+        <title>Portfolio: Vy Dinh</title>
+    </head>
+    <body class="case-body">
+        <header class="padded">
+            <div class="nav-container">
+                <div class="show-hide"><nav id="contact">
+                    <h4>Welcome!</h4>
+					<p>Do not hesitate,<br>if you like the potential,<br>please reach out to me!<br><a href = "mailto: vyudinh@gmail.com">Send Email</a></p>
+                </nav>
+                </div>
+                <nav id="banner">
+                    <div class="logo">
+                        <a href="index.html"><img class="logo-img" src="images\logo.png" alt="logo of the letter v">
+                        </a>
+                    </div>
+                    <div class="happy" onclick="myContact()">
+                        <svg class="happy-face" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="goldenrod" class="bi bi-emoji-smile" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"/>
+                        </svg>
+                    </div>
+                </nav>
+        </header>
+        <main class="padded-15">
+            <div id="intro">
+                <h1>Amazon Shopping App Redesign  <img class="case-profile-img" src="images\amazon-logo.png" alt="project logo"></h1>
+                <p class="subtitle">Heuristics, Personas, Flowcharts, Prototyping</p>
+            </div>
+            <div id="aboutCase">
+                <p>For the Design for Digital Environments course, our project focused on an existing mobile application. Our goal was to analyze the app and improve the user experience by providing UX/UI design solutions based on feedback from extensive usability testing. The app that my group chose was the Amazon shopping app for its popularity. Our first step was to do a heuristics study of the app to find out pain points that could be addressed in a redesign.</p>
+                <p>My group members were Nathan Hollaway and Jasmine Loyal.</p>
+                
+            </div>
+            <a class="view-complete gold" href="amazon-presentation.pdf" target="_blank">view complete<br> case study</a>
+            <a class="view-complete2 gold" href="amazon-presentation.pdf" target="_blank">view complete case study</a>
+        
+            <div class="case-info">
+                <section>
+                    <h2>Personas</h2>
+                        <img class="persona-img" src="images/persona1.png">
+                        <img class="persona-img" src="images/persona2.png">
+                        <img class="persona-img" src="images/persona3.png">
+                </section>
+                
+                <section>
+                    <h2>Scenarios</h2>
+                    <div class="scenarios-container">
+                        <div class="goal">
+                            <h4>1. Needs to easily compare products listed to make informed decisions</h4>
+                            <p>Michelle opens the app to begin searching for a new bed for her oldest child. She has set aside the time required to do a little research prior to purchasing. Upon opening the app, she heads straight for the search bar. She inputs “boys twin bed” and briefly scrolls through the initial results. She decides to filter the list by color and material. She views the product page for the first result and scrolls to the “compare” module. One of the other beds in the list isn’t a contender. She wants to compare. She cannot perform the action</p>
+                        </div>
+                        <div class="goal">
+                            <h4>2. Needs to efficiently reorder items</h4>
+                            <p>Mason notices that he needs to order more water filters. He grabs his phone and gets on Amazon. Initially he clicks on “Buy Again”, but what he is looking for isn’t listed. He goes to his previously placed orders.  He checks the filter option, but decides he doesn’t remember when the last time he made the purchase. He decides to go back and do a search instead and gets no results because of a misspelling. He is annoyed that the search didn’t recognize his intention. He corrects it and finds the item</p>
+                            <img src="images\scenario1.png">
+                        </div>
+                        <div class="goal">
+                            <h4>3. Wants to be able to compare items to make sure he’s making the best choice</h4>
+                            <p>Eugene decides, before going out to buy a lawnmower, to check the Amazon app via the departments in order to determine what his best options might be. Going through Home and Garden, he finds the top ranked lawn mowers. Once there he can’t compare them to each other nor do any filtering to match his specifications</p>
+                        </div>
+
+                    </div>
+                        
+                </section>
+
+                <section>
+                    <h2>Tasks</h2>
+                    <div class="-table">
+                        <table id="task-table">
+                            <tr>
+                                <th class="column-header">Tasks selected for further exploration</th>
+                                <th class="column-header">Applicable Heuristics</th>
+                                <th class="column-header">Garrett's Plane</th>
+                            </tr>
+                            <tr>
+                                <td class="row-header-task">Reorder previously purchased products</td>
+                                <td>Flexibility and efficiency of use, aesthetic and minimalist design, recognition rather than recall</td>
+                                <td>Interaction Design</td>
+                            </tr>
+                            <tr>
+                                <td class="row-header-task">View/read product reviews 
+                                    (rather than several overlapping)</td>
+                                <td>Aesthetic and minimalist design</td>
+                                <td>Navigation design, information architecture</td>
+                            </tr>
+                            <tr>
+                                <td class="row-header-task">Look at customer-uploaded product images (with a way to exit that doesn’t hinder the user</td>
+                                <td>Consistency and standards, flexibility and efficiency of use</td>
+                                <td>Navigation design</td>
+                            </tr>
+                            <tr>
+                                <td class="row-header-task">Navigate through screens without losing place in the app (without having to repeatedly backtrack or redo search)</td>
+                                <td>User control and freedom, flexibility and efficiency of use</td>
+                                <td>Navigation design</td>
+                            </tr>
+                            <tr>
+                                <td class="row-header-task">Compare products beyond those suggested (allow the user freedom to choose which products are reviewed)</td>
+                                <td>Flexibility and efficiency of use, Aesthetic and minimalist design</td>
+                                <td>Functional specification, interaction design</td>
+                            </tr>
+                            
+                        </table>
+                    </div>
+                </section>
+                
+                <section>
+                    <h2>Prototyping</h2>
+                    <iframe src="https://marvelapp.com/prototype/bb58a04?emb=1&iosapp=false&frameless=false" width="390" height="735" allowTransparency="true" frameborder="0" style="-webkit-clip-path: inset(2px 2px); clip-path: inset(2px 2px);"></iframe>
+                </section>
+            </div>
+        
+        </main>
+        <footer>
+            
+        </footer>
+    </body>
+</html>

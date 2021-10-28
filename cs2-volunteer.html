@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Main style -->
+        <link href="style.css" rel="stylesheet">
+        <link href="style-case.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script> 
+        $(document).ready(function(){
+            $(".happy").click(function(){
+                $(".show-hide").slideToggle("normal");
+            });
+        });
+        </script>
+        <title>Portfolio: Vy Dinh</title>
+    </head>
+    <body class="case-body">
+        <header class="padded">
+            <div class="nav-container">
+                <div class="show-hide"><nav id="contact">
+                    <h4>Welcome!</h4>
+					<p>Do not hesitate,<br>if you like the potential,<br>please reach out to me!<br><a href = "mailto: vyudinh@gmail.com">Send Email</a></p>
+                </nav>
+                </div>
+                <nav id="banner">
+                    <div class="logo">
+                        <a href="index.html"><img class="logo-img" src="images\logo.png" alt="logo of the letter v">
+                        </a>
+                    </div>
+                    <div class="happy" onclick="myContact()">
+                        <svg class="happy-face" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="goldenrod" class="bi bi-emoji-smile" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"/>
+                        </svg>
+                    </div>
+                </nav>
+        </header>
+        <main class="padded-15">
+            <div id="intro">
+                <h1>Baltimore Volunteers App  <img class="case-profile-img" src="images\map-bmore.jpg" alt="project logo"></h1>
+                <p class="subtitle">Heuristics, Prototyping, User Testing</p>
+            </div>
+            <div id="aboutCase">
+                <p>For the Interaction Design course, we designed a conceptual app that connected organizers and volunteers. The project started out with a literary review to better understand the different facets of volunteerism and potential demographics, with emphasis on social connection. We applied interaction design heuristics to support the basis of our design's elements. Through user testing with prototypes, we refined our app's design and layout.</p>
+                <p>My group members were Jessica Elroy and Becca Slavin.</p>
+                
+            </div>
+            <a class="view-complete gold" href="volunteer-presentation.pdf" target="_blank">view complete<br> case study</a>
+            <a class="view-complete2 gold" href="volunteer-presentation.pdf" target="_blank">view complete case study</a>
+        
+            <div class="case-info">
+                <section>
+                    <h2>Literature Review</h2>
+                        <ul>
+                            <li>Why do people volunteer?</li>
+                                <ul>
+                                    <li>Social connection (friendship, social emotion support)</li>
+                                    <li>Personal development (career propelling, self-esteem, enjoyment, altruism</li>
+                                </ul>
+                            <li>How to generate and maintain volunteers</li>
+                                <ul>
+                                    <li>Reward system or incentives</li>
+                                    <li>Acknowledgement of contribution and efforts, sense of self worth</li>
+                                    <li>Overall feel of the environment</li>
+                                    <li>Sense of community and collectiveness</li>
+                                </ul>
+                            <li>Deterrents for volunteering</li>
+                                <ul>
+                                    <li>Time constraints</li>
+                                    <li>Life priorities</li>
+                                    <li>Distance</li>
+                                </ul>
+                            <li>Existing options of volunteerism</li>
+                            <ul>
+                                <li>Church entities (encompassing "stewardship," donations)</li>
+                                <li>Children's activities (coaching, group snacks, carpooling)</li>
+                            </ul>
+                        </ul>
+                </section>
+                
+                <section>
+                    <h2>Heuristics</h2>
+                        <div class="heuristics-findings">
+                            <div class="bullet1">
+                                <h4>Plain language</h4>
+                                <ul>
+                                    <li>Lower literacy users are unable to scan or glance at text and understand</li>
+                                    <li>Keep writing at a 6th grade level to maintain accessibility for all users</li>
+                                </ul>
+                            </div>
+                            <div class="bullet2">
+                                <h4 >Streamline page design</h4>
+                                <ul>
+                                    <li>Important content should go in a single column, simplifying page scanning</li>
+                                    <li>Benefits lower literacy and low vision users. Increases usability for handheld devices</li>
+                                </ul>
+                            </div>
+                            <div class="bullet3">
+                                <h4>Keep text static</h4>
+                                <ul>
+                                    <li>Static text is easier to read, try not to use flyout menus and animations</li>
+                                    <li>Keeping text static is helpful for lower literacy users, international users, and users with motor skill impairments</li>
+                                </ul>
+                            </div>
+                            <div class="bullet4">
+                                <h4>Create roles for users</h4>
+                                <ul>
+                                    <li>Many users within a lower social economic status (SES) are affected by not having the same skill sets of higher SES volunteers</li>
+                                    <li>These people will not be recruited and utilized to their full potential</li>
+                                    <li>To encourage people to volunteer, it would be helpful to have a variety of defined roles</li>
+                                    <li>Defined roles create a feeling of usefulness and accomplishment</li>
+                                </ul>
+                            </div>
+                            <div class="bullet5">
+                                <h4>Add a skill portfolio</h4>
+                                <ul>
+                                    <li>Allowing users to add a portfolio will help showcase different skills and to help develop specialized skills</li>
+                                    <li>Benefits the user and the volunteer community as a whole</li>
+                                </ul>
+                            </div>
+                        </div>
+                </section>
+                
+                <section>
+                    <h2>Prototyping</h2>
+                    <h3>Paper Prototypes</h3>
+                    <div class="proto-imgs">
+                        <img src="images\paper1.png">
+                        <img src="images\paper2.png">
+                        <img src="images\paper3.png">
+                        <img src="images\paper4.png">
+                    </div>
+                    
+                    <h3>Axure Prototyping</h3>
+                    <div class="proto-imgs">
+                        <div><img src="images\axure-user1.png"></div>
+                        <div><img src="images\axure-user2.png"></div>
+                    </div>
+                    <div class="proto-imgs">
+                        <img src="images\axure1.png">
+                        <img src="images\axure2.png">
+                        <img src="images\axure3.png">
+                        <img src="images\axure4.png">
+                        <img src="images\axure5.png">
+                        <img src="images\axure6.png">
+                    </div>
+                    
+                </section>
+            </div>
+        
+        </main>
+        <footer>
+        </footer>
+    </body>
+</html>

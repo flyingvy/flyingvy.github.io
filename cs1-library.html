@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--stylesheets -->
+        <link href="style.css" rel="stylesheet">
+        <link href="style-case.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script> 
+        $(document).ready(function(){
+            $(".happy").click(function(){
+                $(".show-hide").slideToggle("normal");
+            });
+        });
+        </script>
+        <title>Portfolio: Vy Dinh</title>
+    </head>
+    <body class="case-body">
+        <header class="padded">
+            <div class="nav-container">
+                <div class="show-hide"><nav id="contact">
+                    <h4>Welcome!</h4>
+					<p>Do not hesitate,<br>if you like the potential,<br>please reach out to me!<br><a href = "mailto: vyudinh@gmail.com">Send Email</a></p>
+                </nav>
+                </div>
+                <nav id="banner">
+                    <div class="logo">
+                        <a href="index.html"><img class="logo-img" src="images\logo.png" alt="logo of the letter v">
+                        </a>
+                    </div>
+                    <div class="happy" onclick="myContact()">
+                        <svg class="happy-face" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="goldenrod" class="bi bi-emoji-smile" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"/>
+                        </svg>
+                    </div>
+                </nav>
+        </header>
+        <main class="padded-15">
+                <div id="intro">
+                    <h1>WorldCat Discovery Search<br>Usability Assessment  <img class="case-profile-img" src="images\umd.png" alt="project logo"></h1>
+                    <p class="subtitle">Research Methods, Contextual Inquiries, Eye Tracking Testing</p>
+                </div>
+                <div id="aboutCase">
+                    <p>For the Research Methods course at the University of Baltimore, we completed a group project that evaluated the usability of discovery services for library websites and best practices for configuration. We presented our findings to representatives of four University System of Maryland Affiliated Institutions (USMAI).</p>
+					<p>We identified specific insights and recommendations regarding the current implementation of the WorldCat Discovery Services at the University of Maryland College Park that would help student research.</p>
+					<p>My group members were Jayme Squire and Tim McGowan.</p>
+                    
+                </div>
+                <a class="view-complete gold" href="library-presentation.pdf" target="_blank">view complete<br> case study</a>
+                <a class="view-complete2 gold" href="library-presentation.pdf" target="_blank">view complete case study</a>
+
+                <div class="case-info">
+                    <section>
+						<h2>Methodology</h2>
+                        <p>Eight areas of focus were identified and incorporated into the design of a consistent set of user tasks to test the usability of each institution’s Discovery Services. Research teams tested each of the tasks on the targeted institution’s system, making slight modifications as needed to create a consistent challenge for users. For example, a book title that was unavailable at the target institution might be substituted for one that was.</p>
+                        <p>Subjects were recruited from a pool of current students enrolled in the institution, and offered an incentive of a $25 Fandango gift card upon completion of the testing session. Sessions were conducted in succession at the Usability Lab at the University of Baltimore, utilizing the Tobii Eye Tracking system.  Each testing session lasted approximately 1 hour and began with a pre-screening questionnaire to identify the subject’s current level of experience with the library’s systems.</p>
+                        <div><img style="padding-top: 25px" src="images\tobii1.png"></div>
+                        <div>
+                            <h3>Areas of Investigation</h3>
+                            <ul aria="Areas of investigation">
+                                <li>Configuration of sidebar elements</li>
+                                <li>Effectiveness of known item searching</li>
+                                <li>Usability / usefulness of fulfillment options in result list and/or <br>detailed record (i.e. full-text links, "Find It", ILL, catalog record links, etc.)</li>
+                                <li>Real-time availability information </li>
+                                <li>Integration of discovery within the library website</li>
+                                <li>Integration of library website content within discovery</li>
+                                <li>Weighting / highlighting of local library's items </li>
+                                <li>Identification of media format in results </li>
+                            </ul>
+                            </div>
+                    </section>
+                    
+                    <section>
+						<h2>User Profiles</h2>
+                        <p>Four undergraduate students from the University of Maryland College Park were recruited on a first come, first serve basis to test the WorldCat Discovery systems. Subjects came from a diverse set of degree programs and previous experiences with library systems. Recruitment methods were focused solely on identifying undergraduate students (the institution’s target population for this study).</p>
+                        
+                        <div class="-table">
+                            <table id="user-profiles">
+								<tr>
+									<th></th>
+									<th class="column-header">User 1</th>
+									<th class="column-header">User 2</th>
+									<th class="column-header">User 3</th>
+									<th class="column-header">User 4</th>
+								</tr>
+								<tr>
+									<th class="row-header">Age:</th>
+									<td>24</td>
+									<td>19</td>
+									<td>20</td>
+									<td>21</td>
+								</tr>
+								<tr>
+									<th class="row-header">Major:</th>
+									<td>History</td>
+									<td>English</td>
+									<td>Health Sciences</td>
+									<td>Psychology</td>
+								</tr>
+								<tr>
+									<th class="row-header">Class Standing:</th>
+									<td>Senior</td>
+									<td>Junior</td>
+									<td>Junior</td>
+									<td>Junior</td>
+								</tr>
+								<tr>
+									<th class="row-header">Training/Orientation to Research Tools:</th>
+									<td>High school, Community College, and Four-year (Not UMCP)</td>
+									<td>English 301</td>
+									<td>Various classes, high school, and summer programs</td>
+									<td>Previous projects</td>
+								</tr>
+								<tr>
+									<th class="row-header">Frequency of Library Use:</th>
+									<td>3 or more times per week</td>
+									<td>1-2 times per week</td>
+									<td>1-2 times per month</td>
+									<td>1-2 times per month</td>
+								</tr>
+								<tr>
+									<th class="row-header">Habits:</th>
+									<td>Always places search terms in quotations.</td>
+									<td>Uses WorldCat advanced search for most tasks.</td>
+									<td>Strong reliance on online sources.</td>
+									<td>Starts search at Resources for Undergraduates.</td>
+								</tr>
+								<tr>
+									<th class="row-header">Quote:</th>
+									<td>“If you put things in quotes, it isolates them, so it won’t give me things that...well, I guess I don’t need it for ‘critiques.’”</td>
+									<td>“I’m just gonna do an advanced search, I don’t want to wade through all that stuff.”</td>
+									<td>“I’ve only ever used this website for research articles.”</td>
+									<td>“I was taught when I was in Freshman year to go to Undergraduate when I’m looking for things, and there’s an Academic Search Complete, which is what I usually do.”</td>
+								</tr>
+                            </table>
+                        </div>
+                    </section>
+                    
+					<section>
+                        <h2>Findings</h2>
+                            <div id="top-findings">
+                                <h3>Discovery Search on Homepage</h3>
+                                    <div class="findings-wrap">
+                                        <p>WorldCat’s main search box is ideally placed on the homepage to support strong visibility. However, half of the subjects were unaware that it was for all source types, and only one subject utilized the “Databases” tab. Revising the language used and tab structure should help to alleviate these deficiencies.</p>
+                                        <img class="finding-img" src="images\finding-discovery.png">
+                                        
+                                    </div>
+                                   
+                                <h3>Integration of Library Content</h3>
+                                
+                                    <div class="findings-wrap">
+                                        <p>Most users utilized both the library and undergraduate resources as starting points when they did not know where to begin their searches. Students were able to find instructions on how to access certain items or tasks through links provided from the library homepage. However, users struggled to access their accounts specifically and the “My Accounts” contents were not easily accessible.</p>
+                                        <img class="finding-img" src="images\finding-integration.png">
+                                        <img src="images\tobii2.png">
+                                    </div>
+                                    
+                                <h3>Recommendation Search</h3>
+                                    <div class="findings-wrap">
+                                        <p>WorldCat discovery provides search recommendations, both in drop down forms as well as with spelling recommendations. While this can provide benefits to users during their research tasks, several issues were identified with the current implementation of these tools which led to inadvertent modifications to search terms.</p>
+                                        <img class="finding-img" src="images\finding-search.png">
+                                    </div>
+                                <h3>Display of Results</h3>
+                                    <div class="findings-wrap">
+                                        <p>Search results are displayed in a list with pertinent information, and local sources appear to be prioritized over sources from other USMAI institutions. However, inconsistencies in the displayed fields, iconography, and summaries frustrated users when assessing potential resources.</p>
+                                        <img class="finding-img" src="images\finding-display.png">
+                                    </div>
+                                <h3>Fulfillment Options</h3>
+                                    
+                                    <div class="findings-wrap">
+                                        <p>Students are provided multiple methods to obtain sources throughout the library system including online access, interlibrary loans, and local requests. Testing indicated a strong preference to materials with online access, and as a result several were unfamiliar with how to access resources via alternative methods. Reinforcing a consistent look and feel between these methods should support increased use of all types of resources.</p>
+                                        <img class="finding-img" src="images\finding-options.png">
+                                    </div>
+                                    
+                                <h3>Sidebar Configuration</h3>
+                                    <div class="findings-wrap">
+                                        <p>Filter options were beneficial in focusing search results; however, they tend to be used after several unsuccessful search attempts. Revising language and filter order may help to attract users and increase use. </p>
+                                        <img class="finding-img" src="images\finding-sidebar.png">
+                                        <img src="images\tobii3.png">
+                                    </div>
+                            </div>
+					</section>
+                </div>
+			
+        </main>
+        <footer>
+            
+        </footer>
+    </body>
+</html>
