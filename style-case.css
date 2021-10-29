@@ -99,6 +99,10 @@ footer {
     width: 50px;
     height: auto;
 }
+.sec-img {
+    padding-top: 25px;
+    width: 60%;
+}
 #top-findings {
     display: grid;
     justify-items: center;
@@ -190,10 +194,25 @@ footer {
     background-color: rgba(245, 222, 179, 0.493);
 }
 .scenarios-container {
-    display: flex;
-    flex-flow: column wrap;
-    width: 90%;
-    align-items: center;
+    display: block;
+    justify-content: center;
+    align-items: baseline;
+}
+.scenarios-container div {
+    background-color: whitesmoke;
+    padding: .5rem;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+}
+.goal1 {
+    grid-area: goal1;
+}
+.goal2 {
+    grid-area: goal2;
+}
+.goal3 {
+    grid-area: goal3;
 }
 
 
@@ -218,7 +237,7 @@ footer {
     .body {background: rgb(107, 0, 128);}
     .item-img {
         width: minmax(350px, 400px);
-    }  
+    }
 }
   
   /* Medium devices (landscape tablets, 768px and up) */
@@ -241,6 +260,8 @@ footer {
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
     }
+
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -269,10 +290,15 @@ footer {
         gap: 1rem;
     }
     .scenarios-container {
-        display: flex;
-        flex-flow: column wrap;
-        width: 65%;
+        display: grid;
+        grid-template-areas:
+            "goal2 goal2"
+            "goal1 goal3"
+            ;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
     }
+
 } 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
