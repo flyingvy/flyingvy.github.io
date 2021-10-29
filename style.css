@@ -177,6 +177,9 @@ footer {
     #aboutMeInfo {
         width: 100%;
     }
+    .item-img {
+        opacity: .95;
+    }
   }
   
   /* Small devices (portrait tablets and large phones, 600px and up) */
