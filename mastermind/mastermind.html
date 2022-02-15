@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Mastermind</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="mastermind.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header>
+            <h1>Mastermind</h1>
+        </header>
+        <div class="fullboard">
+            <div class="container">
+                <div class="board">
+                    <div class="secret-code">
+                        <div class="peg">?</div>
+                        <div class="peg">?</div>
+                        <div class="peg">?</div>
+                        <div class="peg">?</div>
+                    </div>
+                    <div class="guesses">
+                        <div class="guess">
+                            <div class="peg"></div>
+                            <div class="peg"></div>
+                            <div class="peg"></div>
+                            <div class="peg"></div>
+                        </div>
+                        <div class="guess">
+                            <div class="peg"></div>
+                            <div class="peg"></div>
+                            <div class="peg"></div>
+                            <div class="peg"></div>
+                        </div>
+                        <div class="guess">
+                            <div class="peg"></div>
+                            <div class="peg"></div>
+                            <div class="peg"></div>
+                            <div class="peg"></div>
+                        </div>
+                        <div class="guess">
+                            <div class="peg"></div>
+                            <div class="peg"></div>
+                            <div class="peg"></div>
+                            <div class="peg"></div>
+                        </div>
+                        <div class="guess">
+                            <div class="peg"></div>
+                            <div class="peg"></div>
+                            <div class="peg"></div>
+                            <div class="peg"></div>
+                        </div>
+                        <div class="guess">
+                            <div class="peg"></div>
+                            <div class="peg"></div>
+                            <div class="peg"></div>
+                            <div class="peg"></div>
+                        </div>
+                        <div class="guess">
+                            <div class="peg"></div>
+                            <div class="peg"></div>
+                            <div class="peg"></div>
+                            <div class="peg"></div>
+                        </div>
+                        <div class="guess">
+                            <div class="peg"></div>
+                            <div class="peg"></div>
+                            <div class="peg"></div>
+                            <div class="peg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="side">
+                    <button id="newGame">new game</button>
+                    <div class="sideBottom">
+                        <div class="hints">
+                            <div class="hint">
+                                <div class="hint-peg"></div>
+                                <div class="hint-peg"></div>
+                                <div class="hint-peg"></div>
+                                <div class="hint-peg"></div>
+                            </div>
+                            <div class="hint">
+                                <div class="hint-peg"></div>
+                                <div class="hint-peg"></div>
+                                <div class="hint-peg"></div>
+                                <div class="hint-peg"></div>
+                            </div>
+                            <div class="hint">
+                                <div class="hint-peg"></div>
+                                <div class="hint-peg"></div>
+                                <div class="hint-peg"></div>
+                                <div class="hint-peg"></div>
+                            </div>
+                            <div class="hint">
+                                <div class="hint-peg"></div>
+                                <div class="hint-peg"></div>
+                                <div class="hint-peg"></div>
+                                <div class="hint-peg"></div>
+                            </div>
+                            <div class="hint">
+                                <div class="hint-peg"></div>
+                                <div class="hint-peg"></div>
+                                <div class="hint-peg"></div>
+                                <div class="hint-peg"></div>
+                            </div>
+                            <div class="hint">
+                                <div class="hint-peg"></div>
+                                <div class="hint-peg"></div>
+                                <div class="hint-peg"></div>
+                                <div class="hint-peg"></div>
+                            </div>
+                            <div class="hint">
+                                <div class="hint-peg"></div>
+                                <div class="hint-peg"></div>
+                                <div class="hint-peg"></div>
+                                <div class="hint-peg"></div>
+                            </div>
+                            <div class="hint">
+                                <div class="hint-peg"></div>
+                                <div class="hint-peg"></div>
+                                <div class="hint-peg"></div>
+                                <div class="hint-peg"></div>
+                            </div>
+                        </div>
+                        <div id="overlay" class="overlay">you wind</div>
+                    </div> 
+                </div>
+            </div>
+            <div class="controls">
+                <div class="options">
+                    <button value="1" id="green" class="green color"></button>
+                    <button value="2" id="purple" class="purple color"></button>
+                    <button value="3" id="yellow" class="yellow color"></button>
+                    <button value="4" id="blue" class="blue color"></button>
+                    <button value="5" id="red" class="red color"></button>
+                    <button value="6" id="brown" class="brown color"></button>
+                </div>
+                <button id="arrowBack" class="arrowBack peg">&lt</button>
+                <button id="check" class="">check</button>
+            </div>
+            
+        </div>
+        <script src="mastermind.js"></script>
+    </body>
+</html>
