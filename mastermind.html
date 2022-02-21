@@ -21,6 +21,12 @@
         <header>
             <h1>Mastermind</h1>
         </header>
+        <div class="instructions">
+            <h2>crack the code!</h2>
+            <p>The secret code is made up of four colors chosen randomly from the 6 colors shown. Colors may repeat in the code. You have eight tries. Next to each attempt are there hints. A black hint peg means that one of the colors in the guess is correct and also in the right location. A white peg means that a color is correct, but not in the right location. For example, if the hint shows one black peg and two white pegs, it means that one of the colors in the guess is correct and in the right location and two colors are correct, but in the wrong location.</p>
+            <h3>Good luck!</h3>
+            <h4 id="closeOut">close</h4>
+        </div>
         <div class="fullboard">
             <div class="container">
                 <div class="board">
@@ -147,7 +153,7 @@
                     <button value="5" id="red" class="red color"></button>
                     <button value="6" id="brown" class="brown color"></button>
                 </div>
-                <button id="arrowBack" class="arrowBack peg">&lt</button>
+                <button id="arrowBack" class="arrowBack">&lt</button>
                 <button id="check" class="">check</button>
             </div>
             

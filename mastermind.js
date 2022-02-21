@@ -7,6 +7,9 @@ let code = [], //Sequence the player needs to guess
     hintContainer = document.getElementsByClassName("hint"),
     overlay = document.getElementById("overlay"),
 
+    instructions = document.getElementsByClassName("instructions"),
+    close = document.getElementById("closeOut"),
+
     rowIncrement = guessContainer.length - 1,
     hintIncrement = hintContainer.length - 1,
 
@@ -41,6 +44,7 @@ function gameSetup() {
     document.getElementById("newGame").onclick = newGame;
     document.getElementById("check").onclick = compare;
     document.getElementById("arrowBack").onclick = removeLast;
+    close.onclick = closeOut;
 
     guessContainer[rowIncrement].style.backgroundColor = "white";
 }
@@ -49,6 +53,10 @@ function generateSecretCode (min, max) {
     for (let i = 0; i < 4; i++) {
         code[i] = Math.floor(Math.random() * (max - min)) + min;
     }
+}
+
+function closeOut () {
+    instructions[0].style.display = "none";
 }
 
 function insertColor() {
@@ -122,10 +130,6 @@ function updateHint(status) {
 }
 
 function newGame() {
-    
-    if (rowIncrement !== guessContainer.length - 1){
-        guessContainer[rowIncrement+1].style.backgroundColor = "";
-    }
        
     guess = [];
     removeClass = [];
@@ -136,22 +140,19 @@ function newGame() {
     isMatch = "";
     overlayOff = true;
     overlay.style.display = "none";
-    guessContainer[rowIncrement].style.backgroundColor = "white";
     currentRow = guessContainer[rowIncrement].getElementsByClassName("peg");
     currentHint = hintContainer[hintIncrement].getElementsByClassName("hint-peg");
     
     for(let i = 0; i < 8; i++){
         let removeHint = hintContainer[i].getElementsByTagName("div");
+        let removeGuess = guessContainer[i].getElementsByTagName("div");
+        guessContainer[i].style.backgroundColor = "";
         for(let j = 0; j < 4; j++){
             removeHint[j].className = "hint-peg";
-        }
-    }
-    for(let i = 0; i < 8; i++){
-        let removeGuess = guessContainer[i].getElementsByTagName("div");
-        for(let j = 0; j < 4; j++){
             removeGuess[j].className = "peg";
         }
     }
+
     for (let i = 0; i < 1; i++) {
         let removeSecret = secretContainer[i].getElementsByTagName("div");
         for (let j = 0 ; j < 4; j++) {
@@ -161,6 +162,7 @@ function newGame() {
             
     }
 
+    guessContainer[rowIncrement].style.backgroundColor = "white";
     generateSecretCode(1,7);
 
     console.log("new secret code:" + code);
@@ -183,7 +185,7 @@ function gameEnd() {
     } else if (rowIncrement ===-1) {
         overlay.style.display = "block";
         overlay.style.backgroundColor = "pink";
-        overlay.innerHTML = "game &#128533 over";
+        overlay.innerHTML = "game&#128533over";
         showSecretCode();
         overlayOff = false;
     }
@@ -200,4 +202,6 @@ function showSecretCode() {
 
 gameSetup();
 
-console.log(code);
+console.log("secret code:" + code);
+console.log(rowIncrement);
+console.log(hintIncrement);
